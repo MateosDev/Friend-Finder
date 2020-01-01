@@ -1,5 +1,5 @@
-html { 
-    background-image: url("./app/public/img/BG/homebg/bmwBG.png"); 
+body { 
+    background-image: url("/friendfinder.gif"); 
     /* no-repeat center center fixed;  */
     /* -webkit-background-size: cover;
     -moz-background-size: cover;
