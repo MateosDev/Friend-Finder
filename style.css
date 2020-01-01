@@ -1,0 +1,8 @@
+html { 
+    background-image: url("./app/public/img/BG/homebg/bmwBG.png"); 
+    /* no-repeat center center fixed;  */
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+  }
