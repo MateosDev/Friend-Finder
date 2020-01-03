@@ -1,22 +1,23 @@
-//DEPENDENCIES
 
 var path = require("path");
 
-//HTML ROUTES
+// ===============================================================================
+// ROUTING
+// ===============================================================================
 
-module.exports=function(app) {
+module.exports = function(app) {
+  // HTML GET Requests
+  // ---------------------------------------------------------------------------
 
-app.get("/api/friends", function(){
-    res.sendFile(path.join(_dirname, "../data/friends.js"));
-});
+  app.get("/api/friends", function(req, res) {
+    res.sendFile(path.join(__dirname, "../data/friends.js"));
+  });
 
-app.get("/survey", function(req,res){
-    res.sendFile(path.join(_dirname,"../public/survey.html"));
-});
+  app.get("/survey", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/survey.html"));
+  });
 
-app.get("*", function(req,res){
-    res.sendFile(path.join(_dirname, "../public/home.html"));
-});
-
+  app.get("*", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/home.html"));
+  });
 };
-
